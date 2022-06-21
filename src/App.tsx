@@ -1,12 +1,12 @@
 import { AppRoutes } from "./Routes";
-import Theme from "../src/styles/theme";
+import Header from "./components/Header/Header";
+import './App.css'
 
 function App() {
   return (
-    <>
-      <Theme />
+    <div className="App">
       <AppRoutes />
-    </>
+    </div>
   );
 }
 
