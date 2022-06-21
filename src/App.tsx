@@ -1,10 +1,12 @@
 import { AppRoutes } from "./Routes";
+import Theme from "../src/styles/theme";
 
 function App() {
   return (
-    <div>
+    <>
+      <Theme />
       <AppRoutes />
-    </div>
+    </>
   );
 }
 
