@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { QuoteFormWrapper } from "./Style";
 
 function QuoteForm() {
   const [from, setFrom] = useState<String>("");
@@ -10,7 +11,8 @@ function QuoteForm() {
   const [email, setEmail] = useState<String>("");
 
   return (
-    <div>
+    <QuoteFormWrapper>
+      <h2>New Quote</h2>
       <form action="submit">
         <label htmlFor="from">Departure place</label>
         <input type="text" name="from" id="from" placeholder="From" />
@@ -53,8 +55,11 @@ function QuoteForm() {
 
         <label htmlFor="email">Email</label>
         <input type="email" name="email" id="email" placeholder="E-mail" />
+
+        <button type="submit" name="submit" value="submit">Create Quote</button>
+
       </form>
-    </div>
+    </QuoteFormWrapper>
   );
 }
 
