@@ -8,11 +8,11 @@ function Header() {
         <img src={logo} alt="wetbat logo" />
       </a>
       <div>
-        <a className="nav-btn" href="#">
-          Page 1
+        <a className="nav-btn" href="/">
+          New Quote
         </a>
-        <a className="nav-btn" href="#">
-          Page 2
+        <a className="nav-btn" href="/quotes-list">
+          Quotes List
         </a>
       </div>
     </HeaderWrapper>
