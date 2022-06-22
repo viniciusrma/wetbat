@@ -1,19 +1,20 @@
-import logo from "/logo.svg";
+import { Link } from "react-router-dom";
 import { HeaderWrapper } from "./Style";
+import logo from "/logo.svg";
 
 function Header() {
   return (
     <HeaderWrapper>
-      <a href="/">
+      <Link to="/">
         <img src={logo} alt="wetbat logo" />
-      </a>
+      </Link>
       <div>
-        <a className="nav-btn" href="/">
+        <Link to="/" className="nav-btn">
           New Quote
-        </a>
-        <a className="nav-btn" href="/quotes-list">
+        </Link>
+        <Link to="/quotes-list" className="nav-btn">
           Quotes List
-        </a>
+        </Link>
       </div>
     </HeaderWrapper>
   );
