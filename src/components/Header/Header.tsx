@@ -5,9 +5,7 @@ import logo from "/logo.svg";
 function Header() {
   return (
     <HeaderWrapper>
-      <Link to="/">
-        <img src={logo} alt="wetbat logo" />
-      </Link>
+      <img src={logo} alt="wetbat logo" />
       <div>
         <Link to="/" className="nav-btn">
           New Quote
